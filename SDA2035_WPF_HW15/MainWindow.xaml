@@ -1,0 +1,223 @@
+﻿<Window x:Class="SDA2035_WPF_HW15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SDA2035_WPF_HW15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentReader x:Name="docViewer" ViewingMode="Scroll">
+            <FlowDocument>
+                <Section TextAlignment="Center" >
+                    <Paragraph FontSize="20">
+                        <Bold>Европейская классификация чая:</Bold>
+                        <Hyperlink NavigateUri="https://www.chay.info/library/tea/klassifikatsiya_chaya.html">[source]</Hyperlink>
+                    </Paragraph>
+                    <Paragraph FontSize="18">
+                        Классификация по степени ферментации
+                    </Paragraph>
+                </Section>
+                <Section FontSize="16">
+                    <Paragraph>
+                        <Floater Width="250" HorizontalAlignment="Left">
+                            <BlockUIContainer>
+                                <Image Source="Content/tea.jpg"/>
+                            </BlockUIContainer>
+                        </Floater>
+                        Ферментация - сложный биохимический процесс, представляющий 
+                        собой окисление клеточного сока чайного листа под воздействием 
+                        температуры, влаги, света, кислорода, ферментов и времени.
+                    </Paragraph>
+                </Section>
+                <Section FontSize="16">
+                    <Paragraph>
+                        Выделяют 5 типов чая:
+                    </Paragraph>
+                    <List MarkerStyle="Circle">
+                        <ListItem Margin="5">
+                            <Paragraph>
+                                <Underline>Белый</Underline>- неферментированный
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem Margin="5">
+                            <Paragraph>
+                                <Underline>Зеленый</Underline>- неферментированный
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem Margin="5">
+                            <Paragraph>
+                                <Underline>Желтый</Underline> - частично ферментированный
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem Margin="5">
+                            <Paragraph>
+                                <Underline>Красный</Underline>- частично ферментированный (улун)
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem Margin="5">
+                            <Paragraph>
+                                <Underline>Черный</Underline>- ферментированный
+                            </Paragraph>
+                        </ListItem>                        
+                    </List>
+                </Section>
+
+                <Section FontSize="12">
+                    <Table>
+                        <Table.Columns>
+                            <TableColumn Width="0.5*"/>
+                            <TableColumn Width="0.8*"/>
+                            <TableColumn Width="2.5*"/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Степень ферментации</Bold>
+                                    </Paragraph>
+                                    <Paragraph/>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Название типа чая</Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Характеристика</Bold>
+                                    </Paragraph>
+                                </TableCell>
+
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>3 - 7%</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Зеленый чай</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        После сбора свежесорванные чайные листья слегка подвяливают на открытом воздухе. 
+                                        Этот процесс называют «убийством зелени». Чем меньше время подвяливания, 
+                                        тем ближе по своим характеристикам зеленый чай к белому. 
+                                        Как только листья становятся мягкими и выглядят увядшими, 
+                                        их традиционно в течение некоторого времени подвергают термической обработке. 
+                                        Высокая температура быстро притупляет активность ферментов и останавливает процессы окисления, 
+                                        что позволяет чаю сохранять зелёный цвет листьев и нотку свежей зелени в аромате. 
+                                        Также в чае сохраняются лечебные природные биологически активные вещества свежих листьев 
+                                        и во время заваривания они высвобождаются в чашку с чаем.
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>5 - 10%</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Белый чай</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Самый распространенный вопрос, связано ли название чая с цветом напитка. 
+                                        Лист белого чая очень нежный, поэтому самый лучший чай собирают ранней весной. 
+                                        Особенность обработки белого чая состоит в том, что он только подвяливается на солнце и сушится. 
+                                        Чайный лист не скручивается, а остается в своей естественной форме. 
+                                        Для белого чая необходим правильный температурный режим, 
+                                        т.к. слишком высокая температура убьет нежный вкус чая, 
+                                        а слишком низкая — сделает чай пресным. Белый чай оказывает охлаждающее воздействие на организм, 
+                                        поэтому его рекомендуется пить в теплое время года. Он достаточно легок, 
+                                        поэтому класть его можно чуть больше, чем другие чаи — примерно треть объема чайника. 
+                                        Но лучше сделать чай слабым, чем крепким, тогда его вкус можно ощутить в полной мере.
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>7-12%</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Желтый чай</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Желтый чай по своим свойствам похож с зеленым, но технология его производства отличается от других. 
+                                        Некоторые желтые чаи изготавливаются на протяжении 72-х часов. 
+                                        Его производство предполагает технику «томления и оборачивания»: 
+                                        чайный лист некоторое время прогревается над горячими углями, затем его заворачивают в пергамент, 
+                                        отчего он постепенно желтеет. За счет этого происходит особо медленная ферментация, достигающая 12% . 
+                                        Заваривают желтый чай следующим образом: на чайник объемом 150 мл берут примерно 3 грамма чая. 
+                                        Заливают водой и сливают через 25-35 секунд. И так повторяют пять-восемь раз, 
+                                        постепенно увеличивая время настаивания до 1-1,5 минут.
+                                    </Paragraph>
+                                    <Paragraph/>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>до 70%</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Красный чай (в т.ч. улун)</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        История утверждает, что красный чай появился совершенно случайно из-за резкого изменения погоды. 
+                                        Ночью выдался сильный туман, и чай, оставленный в кучах, что называется «сопрел» гораздо сильнее. 
+                                        Потом технологию усовершенствовали и стали производить красный чай. Естественно, 
+                                        что англичане заинтересовались именно таким чаем, ведь его гораздо легче транспортировать и хранить. 
+                                        Интересно, что именно англичане стали насаждать чайное дерево в своих колониях — в Индии и на Цейлоне.
+                                        Само словосочетание «У Лун» означает «Черный Дракон». Улун — это совершенно особый продукт, 
+                                        его неспроста называют «чайным совершенством», сыном Неба и Земли, соединяющим в себе их свойства.
+                                        Заваривают улун совершенно особым образом. Этот способ заваривания называется «гунфу ча» —
+                                        высшее чайное мастерство. Самого чая насыпают примерно на треть чайника. Заливают кипятком, 
+                                        который тут же сливают, споласкивают этой первой водой посуду. Потом заливают чайник снова и 
+                                        опять сливают очень быстро, не настаивая. Этот чай уже следует пить. И так делают несколько раз, 
+                                        пока не «выберут» весь цвет, вкус и аромат.
+                                    </Paragraph>
+                                    <Paragraph/>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>до 100%</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Черный чай (в т.ч.пуэр)</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Черный чай (в Китае – красный), столь распространенный и любимый в России, это чай, 
+                                        который прошел максимально длинную технологическую цепочку в процессе изготовления. 
+                                        В отличие от зеленых чаев или улунов, черный чай в процессе производства подвергается 
+                                        полной ферментации, что придает чайному листу характерный черный цвет и особый «смолистый» 
+                                        (или «бальзамический») аромат. Заваривание черного чая производится довольно горячей водой 
+                                        (90-100%), чай настаивается от 2 до 5 минут. Готовый чай имеет широкое разнообразие цветовых 
+                                        (от светлого золотисто-розового до яркого малиново-красного или красно-коричневого), вкусовых 
+                                        и ароматических оттенков.
+                                    </Paragraph>
+                                    <Paragraph/>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" 
+                    HorizontalAlignment="Center">
+            <Button Content="Сохранить" Width="80" Margin="5" Click="Save"/>
+            <Button Content="Очистить" Width="80" Margin="5" Click="Clear"/>
+            <Button Content="Открыть" Width="80" Margin="5" Click="Open"/>
+        </StackPanel>
+    </Grid>
+</Window>
